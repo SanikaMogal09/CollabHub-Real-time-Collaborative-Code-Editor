@@ -58,7 +58,7 @@ The backend server uses Socket.io as a communication hub:
 - Broadcasts them instantly to all connected clients
 
 ### 3. Seamless Frontend-Backend Integration
-- Frontend is built using Vite (`npm run build`)
+- Frontend is built using Vite 
 - Static files are served via Express using `express.static`
 - Both frontend and backend run on a single port inside the container
 
