@@ -11,6 +11,7 @@ function App() {
   const [ username, setUsername ] = useState(() => {
     return new URLSearchParams(window.location.search).get("username") || ""
   })
+  
   const [ users, setUsers ] = useState([])
 
   const ydoc = useMemo(() => new Y.Doc(), [])
