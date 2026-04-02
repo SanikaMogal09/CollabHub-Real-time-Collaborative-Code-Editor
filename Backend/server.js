@@ -6,7 +6,6 @@ import { YSocketIO } from "y-socket.io/dist/server"
 const app = express()
 const httpServer = createServer(app)
 
-
 const io = new Server(httpServer,{
   cors: {
     origin: "*",
@@ -30,7 +29,6 @@ app.get("/health",(req,res)=>{
     success:true
   })
 })
-
 
 
 httpServer.listen(3000,()=>{
